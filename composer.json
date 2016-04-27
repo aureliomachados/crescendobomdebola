@@ -16,7 +16,8 @@
 	"doctrine/dbal": "~2.3",
         "league/fractal": "^0.13.0",
         "robclancy/presenter": "^1.3",
-        "barryvdh/laravel-debugbar": "^2.2"
+        "barryvdh/laravel-debugbar": "^2.2", 
+	"kim/activity": "^1.1"
 
     },
     "require-dev": {

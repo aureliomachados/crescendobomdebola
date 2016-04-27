@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6d74528c90dbcd636e877f3a75c9f83e",
-    "content-hash": "e9d2b96985b7665111751c8c33610f7d",
+    "hash": "22fd6b04f390e319635bc0998b0199ad",
+    "content-hash": "f3b0085179190351973ac3c59b4d64ba",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -988,6 +988,56 @@
             "time": "2016-01-25 15:38:17"
         },
         {
+            "name": "kim/activity",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thomastkim/laravel-online-users.git",
+                "reference": "840d55e727349b7ac206005c021e1f0190a68c6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thomastkim/laravel-online-users/zipball/840d55e727349b7ac206005c021e1f0190a68c6f",
+                "reference": "840d55e727349b7ac206005c021e1f0190a68c6f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^5.2",
+                "illuminate/session": "^5.2",
+                "illuminate/support": "^5.2",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kim\\": "src/Kim"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Kim",
+                    "email": "thomas@thomastkim.com",
+                    "homepage": "http://thomastkim.com"
+                }
+            ],
+            "description": "Easily retrieve a list of users and guests that are online.",
+            "homepage": "https://github.com/thomastkim/laravel-online-users",
+            "keywords": [
+                "laravel",
+                "online activity",
+                "php"
+            ],
+            "time": "2016-04-18 23:27:58"
+        },
+        {
             "name": "laracasts/flash",
             "version": "2.0.0",
             "source": {
@@ -1032,16 +1082,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.30",
+            "version": "v5.2.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "ecfbbfbf96105439cc9a40bc78277bdb0268e34d"
+                "reference": "2fa2797604bf54b06faf7bb139a9fc0d66826fea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ecfbbfbf96105439cc9a40bc78277bdb0268e34d",
-                "reference": "ecfbbfbf96105439cc9a40bc78277bdb0268e34d",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/2fa2797604bf54b06faf7bb139a9fc0d66826fea",
+                "reference": "2fa2797604bf54b06faf7bb139a9fc0d66826fea",
                 "shasum": ""
             },
             "require": {
@@ -1157,7 +1207,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-04-19 19:12:18"
+            "time": "2016-04-27 13:02:09"
         },
         {
             "name": "laravelcollective/html",
@@ -1690,16 +1740,16 @@
         },
         {
             "name": "prettus/l5-repository",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andersao/l5-repository.git",
-                "reference": "4f34bd3e38b29c9cbb562ab5ea545a6d4aae1f34"
+                "reference": "a6f52e0d79b91569fee183210765f9401a7b9be8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andersao/l5-repository/zipball/4f34bd3e38b29c9cbb562ab5ea545a6d4aae1f34",
-                "reference": "4f34bd3e38b29c9cbb562ab5ea545a6d4aae1f34",
+                "url": "https://api.github.com/repos/andersao/l5-repository/zipball/a6f52e0d79b91569fee183210765f9401a7b9be8",
+                "reference": "a6f52e0d79b91569fee183210765f9401a7b9be8",
                 "shasum": ""
             },
             "require": {
@@ -1746,7 +1796,7 @@
                 "model",
                 "repository"
             ],
-            "time": "2016-04-21 08:53:47"
+            "time": "2016-04-26 15:53:10"
         },
         {
             "name": "prettus/laravel-validation",

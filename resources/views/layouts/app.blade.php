@@ -96,10 +96,10 @@
                                         @else
                                             {{ Auth::user()->name}}
                                         @endif
-                                        <small>Member since Apr. 2015</small>
+                                        <!--<small>Member since Apr. 2015</small>-->
                                     </p>
                                 </li>
-                                <!-- Menu Body -->
+                                <!-- Menu Body
                                 <li class="user-body">
                                     <div class="col-xs-4 text-center">
                                         <a href="#">Followers</a>
@@ -111,13 +111,14 @@
                                         <a href="#">Friends</a>
                                     </div>
                                 </li>
+                                -->
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        <a href="#" class="btn btn-default btn-flat">Perfil</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="{{ url('/logout') }}" class="btn btn-default btn-flat">Sign out</a>
+                                        <a href="{{ url('/logout') }}" class="btn btn-default btn-flat">Sair</a>
                                     </div>
                                 </li>
                             </ul>
@@ -172,7 +173,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
+                        <li><a href="{{ url('/login') }}">Entrar</a></li>
                         <li><a href="{{ url('/register') }}">Registrar</a></li>
                     @endif
                 </ul>
