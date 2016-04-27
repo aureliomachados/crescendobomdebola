@@ -1,8 +1,9 @@
-<!-- Id Field -->
+<!-- Id Field
 <div class="form-group">
     {!! Form::label('id', 'Id:') !!}
     <p>{!! $contato->id !!}</p>
 </div>
+-->
 
 <!-- Nome Field -->
 <div class="form-group">

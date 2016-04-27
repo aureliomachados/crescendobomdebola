@@ -12,7 +12,7 @@ class WelcomeController extends Controller
     public function index(){
 
         //retorna os usuários ativos na última hora
-        $activities = Activity::users(60)->get();
+        $activities = Activity::users(60)->mostRecent()->get();
 
         return view('welcome')->with('activities', $activities);
     }
