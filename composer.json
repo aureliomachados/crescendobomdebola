@@ -15,7 +15,8 @@
 	"jlapp/swaggervel": "dev-master",
 	"doctrine/dbal": "~2.3",
         "league/fractal": "^0.13.0",
-        "robclancy/presenter": "^1.3"
+        "robclancy/presenter": "^1.3",
+        "barryvdh/laravel-debugbar": "^2.2"
 
     },
     "require-dev": {
