@@ -3,6 +3,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Crescendo Bom de Bola">
+    <meta property="og:site_name" content="CBB">
+    <meta property="og:description" content="Escolinha Crescendo Bom de Bola.
+AV. JOAQUIM FERREIRA LISBOA (sem número).
+Quadra Municipal de Jenipapo de Minas - MG">
+    <meta property="og:image" content="{{asset("/imagens/logo.jpg")}}">
+    <meta property="og:type" content="website">
+
     <title>Crescendo Bom de Bola</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
