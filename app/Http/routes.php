@@ -48,3 +48,5 @@ Route::get('/home', 'HomeController@index');
 Route::resource('contatos', 'ContatoController');
 
 Route::resource('atletas', 'AtletaController');
+
+Route::post('report/atleta/{id}', 'ReportController@reportAtleta');

@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -164,6 +164,7 @@ return [
         InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Kim\Activity\ActivityServiceProvider::class,
+        \JasperPHP\JasperPHPServiceProvider::class,
 
     ],
 
