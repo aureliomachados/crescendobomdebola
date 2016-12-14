@@ -19,7 +19,8 @@
         "barryvdh/laravel-debugbar": "^2.2", 
 	"kim/activity": "^1.1",
         "zircote/swagger-php": "^2.0",
-        "cossou/jasperphp": "^2.1"
+        "cossou/jasperphp": "^2.1",
+        "niklasravnsborg/laravel-pdf": "^1.1"
 
     },
     "require-dev": {

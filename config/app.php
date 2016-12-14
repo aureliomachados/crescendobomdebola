@@ -165,6 +165,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Kim\Activity\ActivityServiceProvider::class,
         \JasperPHP\JasperPHPServiceProvider::class,
+        \niklasravnsborg\LaravelPdf\PdfServiceProvider::class,
 
     ],
 
@@ -214,7 +215,8 @@ return [
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\HtmlFacade::class,
         'Flash'     => Laracasts\Flash\Flash::class,
-        'Activity' => Kim\Activity\ActivityFacade::class
+        'Activity' => Kim\Activity\ActivityFacade::class,
+        'PDF' => niklasravnsborg\LaravelPdf\Facades\Pdf::class,
 
     ],
 

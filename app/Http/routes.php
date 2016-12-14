@@ -49,4 +49,4 @@ Route::resource('contatos', 'ContatoController');
 
 Route::resource('atletas', 'AtletaController');
 
-Route::post('report/atleta/{id}', 'ReportController@reportAtleta');
+Route::get('report/atleta/{id}', 'ReportController@reportAtleta')->name('report.atleta');

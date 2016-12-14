@@ -11,7 +11,8 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                   @include('atletas.show_fields')
-                  <a href="{!! route('atletas.index') !!}" class="btn btn-default">Back</a>
+                    <a href="{{ route('report.atleta', ['id' => $atleta->id]) }}" class="btn ">PDF</a>
+                  <a href="{!! route('atletas.index') !!}" class="btn btn-default">Voltar</a>
                 </div>
             </div>
         </div>

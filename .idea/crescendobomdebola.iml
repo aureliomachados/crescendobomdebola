@@ -14,5 +14,6 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="crescendobomdebola node_modules" level="project" />
   </component>
 </module>

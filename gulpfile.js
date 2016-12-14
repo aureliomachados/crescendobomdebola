@@ -1,4 +1,6 @@
-var elixir = require('laravel-elixir');
+const elixir = require('laravel-elixir');
+
+require('laravel-elixir-vue-2');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,6 +13,26 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.sass('app.scss');
+elixir(mix => {
+    mix.sass('app.scss')
+    .webpack('app.js');
+
+mix.styles([
+    'bootstrap.css',
+    'select2.css',
+    'AdminLTE.css',
+    '_all-skins.css',
+    'ionicons.css',
+    'bootstrap-datepicker3.css'
+]);
+
+mix.scripts([
+    'jquery.js',
+    'bootstrap.js',
+    'select2.js',
+    'icheck.js',
+    'admin-lte-app.js',
+    'bootstrap-datepicker.js',
+    'bootstrap-datepicker.pt-BR.min.js'
+]);
 });
