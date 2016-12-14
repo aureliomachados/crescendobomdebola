@@ -6,6 +6,7 @@ use App\Http\Requests;
 use App\Http\Requests\CreateAtletaRequest;
 use App\Http\Requests\UpdateAtletaRequest;
 use App\Repositories\AtletaRepository;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
@@ -57,6 +58,9 @@ class AtletaController extends AppBaseController
     public function store(CreateAtletaRequest $request)
     {
         $input = $request->all();
+
+        $input['datanascimento'] = Carbon::createFromFormat('d/m/Y', $input['datanascimento']);
+        $input['dataregistro'] = Carbon::createFromFormat('d/m/Y', $input['dataregistro']);
 
         $atleta = $this->atletaRepository->create($input);
 
@@ -123,7 +127,12 @@ class AtletaController extends AppBaseController
             return redirect(route('atletas.index'));
         }
 
-        $atleta = $this->atletaRepository->update($request->all(), $id);
+        $input = $request->all();
+
+        $input['datanascimento'] = Carbon::createFromFormat('d/m/Y', $input['datanascimento']);
+        $input['dataregistro'] = Carbon::createFromFormat('d/m/Y', $input['dataregistro']);
+
+        $atleta = $this->atletaRepository->update($input, $id);
 
         Flash::success('Atleta updated successfully.');
 

@@ -20,7 +20,7 @@
 <!-- Idade Field -->
 <div class="form-group">
     {!! Form::label('idade', 'Idade:') !!}
-    <p>{!! $atleta->idade !!}</p>
+    <p>{!! $atleta->datanascimento->age !!}</p>
 </div>
 
 <!-- Colegio Field -->

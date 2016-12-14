@@ -20,7 +20,10 @@ class ReportController extends Controller
 
         $atleta = $this->atletaRepo->find($id);
 
-        $pdf = Pdf::loadView('pdf.document', $atleta->toArray());
+        $data = $atleta->toArray();
+        $data['idade'] = $atleta->datanascimento->age;
+
+        $pdf = Pdf::loadView('pdf.document', $data);
 
         return $pdf->stream('document.pdf');
     }

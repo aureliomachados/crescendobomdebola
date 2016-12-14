@@ -7,13 +7,7 @@
 <!-- Datanascimento Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('datanascimento', 'Data de nascimento:') !!}
-    {!! Form::date('datanascimento', null, ['class' => 'form-control']) !!}
-</div>
-
-<!-- Idade Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('idade', 'Idade:') !!}
-    {!! Form::number('idade', null, ['class' => 'form-control']) !!}
+    <input type="text" name="datanascimento" id="datanascimento" value="{{ $atleta ? $atleta->datanascimento->format('d/m/Y') : ''}}" class="datepicker form-control"/>
 </div>
 
 <!-- Colegio Field -->
@@ -54,7 +48,7 @@
 <!-- Dataregistro Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('dataregistro', 'Data do registro:') !!}
-    {!! Form::date('dataregistro', null, ['class' => 'form-control']) !!}
+    <input type="text" name="dataregistro" id="dataregistro" value="{{ $atleta? $atleta->dataregistro->format('d/m/Y') : ''}}" class="datepicker form-control"/>
 </div>
 
 <!-- Bairro Field -->
@@ -102,5 +96,5 @@
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('atletas.index') !!}" class="btn btn-default">Cancel</a>
+    <a href="{!! route('atletas.index') !!}" class="btn btn-default">Cancelar</a>
 </div>

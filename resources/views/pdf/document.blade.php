@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="panel">
+    <div class="panel panel-default">
         <div class="panel-heading panel-title text-center">
             ESCOLINHA CRESCENDO BOM DE BOLA
             AV. JOAQUIM FERREIRA LISBOA S/Nº
@@ -9,12 +9,14 @@
         </div>
 
         <div class="panel-body">
-            <img src="{{ asset('/imagens/logo.jpg') }}" width="180" height="160" align="center" style="position: absolute; left: 50%; right: 50%; margin-left:-110px;margin-top:-40px;"/>
+            <div class="text-center">
+                <img src="{{ asset('/imagens/logo.jpg') }}" width="100" height="90"/>
+            </div>
 
-            <h4><b>FICHA DE INSCRIÇÃO</b></h4>
-            <p>Nome do atleta:{{ $nome }}</p>
-            <p>Nascido: {{date('d/m/Y', strtotime($datanascimento))}} Idade: {{ $datanascimento->age }} Bairro: {{ $bairro }}</p>
-            <p>End.: {{ $endereco }} CEP: {{ $cep }} N°: {{ $numero }}</p>
+            <h4 class="text-center"><b>FICHA DE INSCRIÇÃO</b></h4>
+            <p>Nome do atleta: {{ $nome }} Nascido: {{date('d/m/Y', strtotime($datanascimento))}} Idade: {{ $idade }}</p>
+
+            <p>Bairro: {{ $bairro }} End.: {{ $endereco }} CEP: {{ $cep }} N°: {{ $numero }}</p>
             <p>Colégio: {{ $colegio }} Série: {{ $serie }} turno: {{ $turno }}</p>
             <p>
                 Eu, {{ $nomeresponsavel }} responsável pelo menor (atleta) acima citado,
@@ -57,13 +59,13 @@
                 <b>OBS</b>: A inscrição só terá validade mediante a apresentação desta ficha preenchida e assinada pelo responsável,
                 entrega de documentos e atestados médicos exigidos pela direção da CBB.
             </p>
-            <br><br>
 
             <p><center>ASSINATURA DO RESPONSÁVEL ( )PAI OU MÃE ( ) OUTRO – especificar</center></p>
+            <hr>
 
             <p>Identidade N°: {{ $identidade }} Orgão expedidor: {{ $orgaoexpedidor }}</p>
 
-            <p><center>Jenipapo de Minas, {{date('d')}} de {{ date('M') }} de {{date('Y')}}.</center></p>
+            <p class="text-center">Jenipapo de Minas, {{date('d')}} de {{ date('M') }} de {{date('Y')}}.</p>
 
         </div>
     </div>

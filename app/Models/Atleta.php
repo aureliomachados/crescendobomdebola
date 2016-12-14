@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * @SWG\Definition(
  *      definition="Atleta",
- *      required={nome, datanascimento, idade, colegio, turno, serie, apto, nomeresponsavel, dataregistro, bairro, endereco, numero, identidade, orgaoexpedidor},
+ *      required={nome, datanascimento, colegio, turno, serie, apto, nomeresponsavel, dataregistro, bairro, endereco, numero, identidade, orgaoexpedidor},
  *      @SWG\Property(
  *          property="id",
  *          description="id",
@@ -113,13 +113,12 @@ class Atleta extends Model
     public $table = 'atletas';
     
 
-    protected $dates = ['deleted_at'];
+    protected $dates = ['deleted_at','datanascimento'];
 
 
     public $fillable = [
         'nome',
         'datanascimento',
-        'idade',
         'colegio',
         'turno',
         'serie',
@@ -166,7 +165,6 @@ class Atleta extends Model
     public static $rules = [
         'nome' => 'required|min:3|max:128',
         'datanascimento' => 'required',
-        'idade' => 'required|numeric|max:100',
         'colegio' => 'required',
         'turno' => 'required',
         'serie' => 'required',

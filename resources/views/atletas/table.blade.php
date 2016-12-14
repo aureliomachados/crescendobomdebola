@@ -17,7 +17,7 @@
             <tr>
                 <td>{!! $atleta->nome !!}</td>
                 <td>{{date('d/m/Y', strtotime($atleta->datanascimento))}}</td>
-                <td>{!! $atleta->idade !!}</td>
+                <td>{!! $atleta->datanascimento->age !!}</td>
                 <td>{!! $atleta->colegio !!}</td>
                 <td>{!! $atleta->turno !!}</td>
                 <td>{!! $atleta->serie !!}</td>
