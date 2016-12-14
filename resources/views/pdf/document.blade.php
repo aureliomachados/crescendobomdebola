@@ -65,7 +65,16 @@
 
             <p>Identidade N°: {{ $identidade }} Orgão expedidor: {{ $orgaoexpedidor }}</p>
 
-            <p class="text-center">Jenipapo de Minas, {{date('d')}} de {{ date('M') }} de {{date('Y')}}.</p>
+            <p class="text-center">
+                Jenipapo de Minas,
+                <?php
+                setlocale( LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese' );
+
+                date_default_timezone_set( 'America/Sao_Paulo' );
+
+                echo strftime( '%A, %d de %B de %Y', strtotime( date( 'Y-m-d' ) ) );
+                ?>.
+            </p>
 
         </div>
     </div>
